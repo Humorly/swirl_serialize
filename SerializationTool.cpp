@@ -1,7 +1,7 @@
 
 #include "cmdline.h"
 
-//#define __release_mode
+#define __release_mode
 
 #include "data_declaration.h"
 #include "data_serialize.h"
