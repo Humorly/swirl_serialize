@@ -1,5 +1,5 @@
 # swirl_serialize
-# 生成方式
+# 生成序列化文件
 	SerializationTool.exe -s data_declaration.h -d data_serialize.h     // Windows
 	SerializationTool -s data_declaration.h -d data_serialize.h         // Linux & Mac
 
