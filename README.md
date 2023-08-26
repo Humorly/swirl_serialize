@@ -1,8 +1,7 @@
 # swirl_serialize
 # 构建流程
-cmake .
-
-cmake --build . --parallel
+	cmake .
+	cmake --build . --parallel
 
 # 生成序列化文件
 	SerializationTool.exe -s data_declaration.h -d data_serialize.h     // Windows
