@@ -1,8 +1,8 @@
 # swirl_serialize
 # 生成方式
-SerializationTool.exe -s data_declaration.h -d data_serialize.h   // Windows
+SerializationTool.exe -s data_declaration.h -d data_serialize.h     // Windows
 
-SerializationTool -s data_declaration.h -d data_serialize.h       // Linux & Mac
+SerializationTool -s data_declaration.h -d data_serialize.h         // Linux & Mac
 
 # 测试代码
 student s1 { 20, "chen", "man", { 1, 2, 3, 4, 5, 6 } };
