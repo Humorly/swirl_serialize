@@ -4,8 +4,8 @@
 	cmake --build . --parallel
 
 # 生成序列化文件
-	SerializationTool.exe -s data_declaration.h -d data_serialize.h     // Windows
-	SerializationTool -s data_declaration.h -d data_serialize.h         // Linux & Mac
+	./SerializationTool.exe -s data_declaration.h -d data_serialize.h     // Windows
+	./SerializationTool -s data_declaration.h -d data_serialize.h         // Linux & Mac
 
 # 测试代码
 	student s1 { 20, "chen", "man", { 1, 2, 3, 4, 5, 6 } };
