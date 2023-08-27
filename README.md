@@ -7,6 +7,8 @@
 	./SerializationTool.exe -s data_declaration.h -d data_serialize.h     // Windows
 	./SerializationTool -s data_declaration.h -d data_serialize.h         // Linux & Mac
 
+# 结构定义 (demo)
+
 # 测试代码
 	student s1 { 20, "chen", "man", { 1, 2, 3, 4, 5, 6 } };
 	// 序列化
