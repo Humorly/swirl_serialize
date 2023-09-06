@@ -40,6 +40,7 @@ int main(int argc, char* argv[])
     std::string dest_path = "data_serialize.h";
 #endif
 
+    // 生成接口
     wstd::swirl_serialize(source_path, dest_path);
 
     return 0;
