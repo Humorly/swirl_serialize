@@ -88,7 +88,7 @@ namespace wstd
             node_function_serialize += "\t\tnlohmann::json json_data = {\n";
 
             // 反序列化
-            std::string node_function_deserialize = std::string("\n\tinline std::string ") + "deserialize (" +
+            std::string node_function_deserialize = std::string("\n\tinline void ") + "deserialize (" +
                 struct_type_name + std::string("& ____object_st") + ", nlohmann::json ____object_json) \n\t{\n";
 
             // 内部节点 —> 普通类型
@@ -415,7 +415,7 @@ namespace wstd
         std::filesystem::path file_path = source_path;
         std::string file_name = file_path.filename().string();
 
-        full_content = "#include \"" + file_name + "\"\n" + std::string("namespace data_serialize {\n") + full_content;
+        full_content = "#include \"" + file_name + "\"\n" + std::string("namespace wstd {\n") + full_content;
         full_content += "}";
         full_content = "#pragma once\n" + std::string("#include \"json.hpp\"\n") + full_content;
 
